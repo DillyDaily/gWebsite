@@ -1,0 +1,32 @@
+.title {
+    text-align:center;
+    margin:.25rem;
+    padding: .5rem;
+}
+
+nav {
+font-size: 1.25em;
+    
+}
+
+.overlock  {
+    font-family: 'Overlock', cursive;
+}
+
+.cinzel {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.julius {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}

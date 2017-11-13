@@ -13,9 +13,13 @@ module.exports = function(app){
 
   app.get('/beads/:id', user.getOne);
 
-  app.get('/beads/cart:id', user.addToCart);
+  app.get('/jewelry', user.getJewelry);
 
-  app.get('/about', user.about);
+  app.get('/jeweelry/:id', user.getOneJewelry);
+
+  app.get('/cart:id', user.addToCart);
+
+  app.get('/bio', user.bio);
 
   app.get('/contact', user.contact);
 

@@ -1,15 +1,21 @@
 const knex = require("../db/knex.js");
 
 module.exports = {
-  // CHANGE ME TO AN ACTUAL FUNCTION
+  // CUSTOMER EXPERIENCE
   index: function(req, res) {
-   
-    res.send('Hello');
+      knex('product')
+        .then((result)=>{
+
+            res.render('index', {product: result});
+        })
   }, 
 
   getAll: function(req, res) {
-    
-     res.send('Hello');
+    knex ('product')
+        .then((result)=> {
+
+            res.render('product', {product: result});
+        })
    }, 
 
    getOne: function(req, res) {
@@ -17,12 +23,22 @@ module.exports = {
      res.send('Hello');
    }, 
 
+   getJewelry: function(req, res) {
+
+    res.send('Hello');
+   },
+
+   getOneJewelry: function(req, res) {
+
+    res.sent('Hello');
+   },
+
    addToCart: function(req, res) {
     
      res.send('Hello');
    }, 
 
-   about: function(req, res) {
+   bio: function(req, res) {
     
      res.send('Hello');
    }, 
